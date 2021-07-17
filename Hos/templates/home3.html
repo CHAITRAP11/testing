@@ -1,0 +1,97 @@
+{% extends 'base.html' %}
+
+{% block bodyblock %}
+
+  <div class="container">
+    <h3 align="center">Choose a Doctor!!</h3>
+    <br>
+
+  <div class="row my-2">
+
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Dr. Jeevan Pawde</h5>
+        <p class="card-text">MBBS, MS</p>
+        <form action="{{url_for('home2') }}" method="post">
+    <input type="hidden" id="custId" name="drname" value="jeevan_pawde">
+    <input type="submit" value="Go!" class="btn btn-primary">
+  </form>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Dr. Pandurang Pawde</h5>
+        <p class="card-text">MBBS, MS</p>
+        <form action="{{url_for('home2') }}" method="post">
+    <input type="hidden" id="custId" name="drname" value="pandurang_pawde">
+    <input type="submit" value="Go!" class="btn btn-primary">
+  </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row my-2">
+
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Dr. Nauman Faruki</h5>
+        <p class="card-text">MBBS DDV</p>
+        <form action="{{url_for('home2') }}" method="post">
+    <input type="hidden" id="custId" name="drname" value="nauman_faruki">
+    <input type="submit" value="Go!" class="btn btn-primary">
+  </form>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Dr. Anup Gilda</h5>
+        <p class="card-text">MBBS, MD</p>
+        <form action="{{url_for('home2') }}" method="post">
+    <input type="hidden" id="custId" name="drname" value="anup_gilda">
+    <input type="submit" value="Go!" class="btn btn-primary">
+  </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row my-2">
+
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Dr. Sanjanna Singal</h5>
+        <p class="card-text">BDS</p>
+        <form action="{{url_for('home2') }}" method="post">
+    <input type="hidden" id="custId" name="drname" value="sanjanna_singal">
+    <input type="submit" value="Go!" class="btn btn-primary">
+  </form>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Dr. Niket Joshi</h5>
+        <p class="card-text">MBBS,MS</p>
+        <form action="{{url_for('home2') }}" method="post">
+    <input type="hidden" id="custId" name="drname" value="niket_joshi">
+    <input type="submit" value="Go!" class="btn btn-primary">
+  </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+</div>
+{% endblock %}

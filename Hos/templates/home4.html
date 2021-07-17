@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% block bodyblock %}
+<div class="container-fluid bg">
+      <div class="row justify-content-center">
+        <div class="col-12 col-sm-6 col-md-3">
+          <form class="form-container" action="{{url_for('home4') }}" method="post">
+      <input type="hidden" id="custId" name="drname" value="{{drname}}">
+
+  <div class="mb-3 my-2">
+  	<h2>Details</h2>
+    <label for="name" class="form-label">Name</label>
+    <input type="name" class="form-control" id="name" name="name" aria-describedby="nameHelp" required>
+  </div>
+  <div class="mb-3 my-2">
+    <label for="Address" class="form-label">Address</label>
+    <input type="address" class="form-control" id="addr" name="addr" aria-describedby="nameHelp" required>
+  </div>
+  <div class="mb-3 my-2">
+    <label for="date" class="form-label">Date</label>
+    <input type="date" class="form-control" id="date" name="date" aria-describedby="nameHelp" required>
+    {% if flag1 %}
+    <p style="color: red">*{{ str }}</p>
+    {% endif %}
+  </div>
+  <div class="form-group my-2">
+    <label for="gender">Gender</label>
+    <select class="form-control" id="gender" name="gender" required>
+      <option>Male</option>
+      <option>Female</option>
+    </select>
+  </div>
+  <div class="mb-3 my-2">
+    <label for="weight" class="form-label">Weight(optional)</label>
+    <input type="number" class="form-control" id="weight" name="weight" aria-describedby="nameHelp">
+  </div>
+  <div class="mb-3 my-2">
+    <label for="age" class="form-label">Age</label>
+    <input type="number" class="form-control" id="age" name="age" required>
+    {% if flag1 %}
+    <p style="color: red">*{{ str1 }}</p>
+    {% endif %}
+  </div>
+  <button type="submit" class="btn btn-dark btn-block" id="button">Submit</button>
+</form>
+        </div>
+      </div>
+    </div>
+
+{% endblock %}

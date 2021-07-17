@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block bodyblock %}
+
+	<div class="container">
+
+		<br><br>
+		<h3 class="content">Welcome!</h3>
+		<br><br>
+		<p>AI is a data driven company.We are a team of engineers, machine learning experts and more, working together to advance the state of the art in artificial intelligence. We use our technologies for widespread public benefit, and collaborate with other on critical challenges.</p> 
+	
+		<br>
+		<div align="center">
+
+			<img src="{{ url_for('static',filename='images/hos.jpg') }}" alt="process" width="600 " height="230">
+			<br><br>
+		</div>
+
+		<div align="center">
+			<a href="{{ url_for('apply') }}" class="btn btn-primary">Try it now</a>
+		</div>
+	</div>
+{% endblock %}
+
+	
+
+
+	

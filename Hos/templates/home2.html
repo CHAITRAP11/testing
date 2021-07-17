@@ -1,0 +1,122 @@
+{% extends 'base.html' %}
+
+{% block bodyblock %}
+<div class="container">
+<div class="row my-4">
+<div class="col-sm-4" align="center">
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">HB</h5>
+    <form action="{{url_for('home2') }}" method="post">
+  	<input type="hidden" id="custId" name="drname" value="HB">
+  	<input type="submit" value="Go!" class="btn btn-primary">
+	</form>
+
+    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+  </div>
+</div>
+</div>
+
+<div class="col-sm-4" align="center">
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">C.B.C</h5>
+    <form action="{{url_for('home2') }}">
+  	<input type="hidden" id="custId" name="custId" value="cbc">
+  	<input type="submit" value="Go!" class="btn btn-primary">
+	</form>
+
+  </div>
+</div>
+</div>
+
+<div class="col-sm-4" align="center">
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">BT/CT</h5>
+    <form action="{{url_for('home2') }}" method="post">
+  	<input type="hidden" id="custId" name="drname" value="bt_ct">
+  	<input type="submit" value="Go!" class="btn btn-primary">
+	</form>
+  </div>
+</div>
+</div>
+
+</div>
+
+<div class="row my-4">
+<div class="col-sm-4" align="center">
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Blood Sugar</h5>
+    <form action="{{url_for('home2') }}" method="post">
+  	<input type="hidden" id="custId" name="drname" value="sugar">
+  	<input type="submit" value="Go!" class="btn btn-primary">
+	</form>
+  </div>
+</div>
+</div>
+
+<div class="col-sm-4" align="center">
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Lipid Profile</h5>
+    <form action="{{url_for('home2') }}" method="post">
+  	<input type="hidden" id="custId" name="drname" value="lipid_profile">
+  	<input type="submit" value="Go!" class="btn btn-primary">
+	</form>
+  </div>
+</div>
+</div>
+
+<div class="col-sm-4" align="center">
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">X-Ray</h5>
+    <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
+    <form action="{{url_for('home2') }}" method="post">
+  	<input type="hidden" id="custId" name="drname" value="xray">
+  	<input type="submit" value="Go!" class="btn btn-primary">
+	</form>
+  </div>
+</div>
+</div>
+
+</div>
+
+
+<div class="row my-4">
+<div class="col-sm-4" align="center">
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Sr.ALP</h5>
+    <form action="{{url_for('home2') }}" method="post">
+  	<input type="hidden" id="custId" name="drname" value="alp">
+  	<input type="submit" value="Go!" class="btn btn-primary">
+	</form>
+  </div>
+</div>
+</div>
+
+<div class="col-sm-4" align="center">
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Total Cholesterol</h5>
+    <form action="{{url_for('home2') }}" method="post">
+  	<input type="hidden" id="custId" name="drname" value="cholesterol">
+  	<input type="submit" value="Go!" class="btn btn-primary">
+	</form>
+  </div>
+</div>
+</div>
+
+
+
+</div>
+
+
+</div>
+
+</div>
+
+{% endblock %}
